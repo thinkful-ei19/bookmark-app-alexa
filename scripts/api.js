@@ -3,7 +3,6 @@
 const api = (function () {
   const BASE_URL = 'https://thinkful-list-api.herokuapp.com/alexa';
   const getBookmarks = function(callback) {
-    console.log('api getBookmarks');
     $.getJSON(`${BASE_URL}/bookmarks`, callback);
   };
   const createBookmark = function(title, callback) {
@@ -17,7 +16,7 @@ const api = (function () {
       success: callback
     });
   };
-  const deleteItem = function(id, callback) {
+  const deleteBookmark = function(id, callback) {
     $.ajax({
       url: `${BASE_URL}/bookmarks/${id}`,
       method: 'DELETE',
@@ -29,7 +28,7 @@ const api = (function () {
   return {
     getBookmarks,
     createBookmark,
-    deleteItem
+    deleteBookmark
   };
 
 }());
