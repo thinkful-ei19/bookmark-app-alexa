@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookmark App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Bookmarks</h1>
+        <form id="js-bookmark-list-form">
+            <div>
+            <input type="checkbox" id="filter-checked" class="filter-checked js-filter-checked" />
+            <label for="filter-checked">Add Bookmark</label>
+            </div>
+            <div class="hidden">
+            <label for="bookmark-list-entry">Add a Bookmark</label>
+            <input type="text" name="bookmark-list-entry" class="js-bookmark-list-entry" placeholder="e.g., Buzzfeed">
+            <button type="submit">Add</button>
+            </div>
+        </form>
+        <form id="js-search-form">
+            <!-- <label for="search-box">Search for Item</label>
+            <input type="text" name="search-box" id="search-box" placeholder="filter items by name"> -->
+        </form>
+        <ul class="bookmark-list js-bookmark-list">
+                <li class="js-item-index-element">
+                    <h3>Facebook</h3>
+                        <span class="bookmark-item js-bookmark-item"></span>
+                        <div class="bookmark-item-controls">
+                          <button class="bookmark-item-toggle js-item-toggle">
+                              <span class="button-label">Details</span>
+                          </button>
+                          <button class="bookmark-item-delete js-item-delete">
+                              <span class="button-label">Delete</span>
+                          </button>
+                        </div>
+                </li>
+                <li class="js-item-index-element">
+                        <h3>YouTube</h3>
+                        <span class="bookmark-item js-bookmark-item"></span>
+                        <div class="bookmark-item-controls">
+                          <button class="bookmark-item-toggle js-item-toggle">
+                              <span class="button-label">Details</span>
+                          </button>
+                          <button class="bookmark-item-delete js-item-delete">
+                              <span class="button-label">Delete</span>
+                          </button>
+                        </div>
+                </li>
+                <li class="js-item-index-element">
+                        <h3>Instagram</h3>
+                        <span class="bookmark-item js-bookmark-item"></span>
+                        <div class="bookmark-item-controls">
+                          <button class="bookmark-item-toggle js-item-toggle">
+                              <span class="button-label">Details</span>
+                          </button>
+                          <button class="bookmark-item-delete js-item-delete">
+                              <span class="button-label">Delete</span>
+                          </button>
+                        </div>
+                </li>
+        </ul>
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
