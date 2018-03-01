@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //initial page - loads
 //once user addds- adding:true
@@ -27,25 +27,25 @@ function generateBookmarkString(bookmarkList) {
 }
 
 function renderBookmarkList() {
-    console.log('renderBookmarkList ran');
+  console.log('renderBookmarkList ran');
 }
 
 function handleAddButtonClicked() {
-    //event listener - listener for add button to be clicked
-    //target hidden class!
-    console.log('handleAddButtonClicked ran');
+  //event listener - listener for add button to be clicked
+  //target hidden class!
+  console.log('handleAddButtonClicked ran');
 
 }
 
 function addBookmarkToList(bookmarkName) {
-    //will push to store.bookmarks
+  //will push to store.bookmarks
 }
 
 // //function is for when user clicks add new bookmark
 // //.val...
 function handleNewBookmarkSubmit() {
-    //event listener 1. 2. 3.render
-    console.log('handleNewBookmarkSubmit ran');
+  //event listener 1. 2. 3.render
+  console.log('handleNewBookmarkSubmit ran');
 }
 
 
@@ -54,32 +54,32 @@ function getBookmarkIndexFromElement() {
 }
 
 function handleRatingDropDownClicked() {
-    //event listener - listen for click on rating drop down
-    //will need function that...
-    console.log('handleRatingDropDownClicked ran');
+  //event listener - listen for click on rating drop down
+  //will need function that...
+  console.log('handleRatingDropDownClicked ran');
 }
 
 
 function handleBookmarkDetailsClicked() {
-    console.log('handleBookmarkDetailsClicked ran');
+  console.log('handleBookmarkDetailsClicked ran');
 }
 
 function handleDeleteBookmarkClicked() {
-    console.log('handleDeleteBookmarkClicked ran');
+  console.log('handleDeleteBookmarkClicked ran');
 
 }
 
 
 function handleBookmarkList() {
-    renderBookmarkList();
-    handleAddButtonClicked();
-    handleNewBookmarkSubmit();
-    handleRatingDropDownClicked();
-    handleBookmarkDetailsClicked();
-    handleDeleteBookmarkClicked();
-  }
+  renderBookmarkList();
+  handleAddButtonClicked();
+  handleNewBookmarkSubmit();
+  handleRatingDropDownClicked();
+  handleBookmarkDetailsClicked();
+  handleDeleteBookmarkClicked();
+}
   
-  $(handleBookmarkList);
+$(handleBookmarkList);
 
 
  
