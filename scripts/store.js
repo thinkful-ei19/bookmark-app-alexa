@@ -5,6 +5,9 @@ const store = (function(){
   const addBookmark = function(bookmark) {
     this.bookmarks.push(bookmark);
   };
+  const deleteBookmark = function(bookmark) {
+
+  };
 
   return {
     bookmarks: [],

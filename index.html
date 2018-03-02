@@ -29,42 +29,24 @@
         <form class="js-add-toggle hidden">
             <!-- unhide when user clicks/toggles 'add' -->
             <div>        
-            <label for="bookmark-list-entry">Add Bookmark</label>
+            <label for="bookmark-list-entry">Title</label>
             <input type="text" name="bookmark-list-entry" class="js-bookmark-list-entry" placeholder="e.g., Buzzfeed">
-            <button type="submit">Add</button>
             <br>
-            <label for="search-box">Description</label>
-            <input type="text" name="search-box" id="search-box" placeholder="add description">
-            <button type="submit">Submit</button>
+            <label for="description-box">Description</label>
+            <input type="text" name="description-box" id="description-box" placeholder="add description">
             <br>
-            <label class="rating-container">One
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-            </label>
-                          
-            <label class="rating-container">Two
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            </label>
-                    
-            <label class="rating-container">Three
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            </label>
-                    
-            <label class="rating-container">Four
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            </label>
-            
-            <label class="rating-container">Five
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            </label>
+            <label for="new-rating-drop-down">Rating</label>
+            <select id="new-rating-drop-down" name="rating-drop-down"> 
+                <option value="1" selected>Rating 1</option>
+                <option value="2">Rating 2</option> 
+                <option value="3">Rating 3</option>
+                <option value="4">Rating 4</option>
+                <option value="5">Rating 5</option>
+            </select>
             <br>
             <label for="url-box">URL</label>
             <input type="text" name="url-box" id="url-box" placeholder="enter url">
-            <button type="submit">Submit</button>
+            <button id="new-bookmark-submit" type="submit">Submit</button>
             </div>
         </form>
 
