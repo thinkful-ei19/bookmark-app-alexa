@@ -11,7 +11,7 @@ const bookmarkList = (function() {
     <li class="js-item-index-element" data-bookmark-id="${bookmark.id}">
         <h3>${bookmark.title}</h3>
         <span class="bookmark-descr js-bookmark-descr hidden">${bookmark.desc || ''}</span>
-        <a href="${bookmark.url}" target="_blank" class="bookmark-item js-bookmark-link hidden">Visit Site</a>
+        <a href="${bookmark.url}" target="_blank" class="bookmark-item js-bookmark-link hidden">Click to Visit</a>
     <div class="bookmark-item-controls">
       <button class="bookmark-item-toggle js-item-toggle" data-bookmark-id="${bookmark.id}">
           <span class="button-label">Details</span>

@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
-    /* not working
-    background-color: bisque; */
   }
   
   body {
     font-family: 'Roboto', sans-serif;
   }
-  
+  h1 {
+    color: white;
+    background-color: black;
+  }
   button, input[type="text"] {
     padding: 5px;
   }
@@ -15,10 +16,10 @@
   button:hover {
     cursor: pointer;
   }
-/* not working??
+  
   a:hover {
     color: blue;
-  } */
+  }
   
   .hidden {
     display: none !important;
@@ -43,6 +44,18 @@
     border: 1px solid grey;
     padding: 20px;
   }
+
+  .add-box {
+    display: inline;
+  }
+  
+  .rating-filter {
+    float: right;
+  }
+
+  /* li {
+    background-color: #C6DEE1;
+  } */
   
   .bookmark-item {
     display: block;
