@@ -14,8 +14,9 @@ const store = (function(){
     adding: false,
     condensed: false,
     rating: null,
-
-
+    
+    addBookmark,
+    deleteBookmark
   };
 
 }());

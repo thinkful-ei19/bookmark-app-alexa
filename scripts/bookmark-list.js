@@ -4,6 +4,7 @@
 
 // eslint-disable-next-line no-unused-vars
 const bookmarkList = (function() {
+
 //returns html element as a string
   function generateBookmarkElement(bookmark) {
     return `
@@ -23,7 +24,7 @@ const bookmarkList = (function() {
   }
 
   function generateBookmarkString(bookmarkList) {
-    //will map over bookamrkList array and generateBookmarkElement on each item/index
+    //will map over bookamrkList array and generateBookmarkElement on each
     //return -- join
     const bookmarks = bookmarkList.map((bookmark) => generateBookmarkElement(bookmark));
     return bookmarks.join('');
@@ -33,8 +34,8 @@ const bookmarkList = (function() {
     api.getBookmarks((bookmarks) => {
       store.bookmarks = bookmarks;
       const bookmarkHtmlElement = generateBookmarkString(store.bookmarks);
-      console.log(bookmarkHtmlElement);
-      console.log(bookmarks);
+      //console.log(bookmarkHtmlElement);
+      //console.log(bookmarks);
       $('.js-bookmark-list').html(bookmarkHtmlElement);
     });
   }
@@ -80,6 +81,7 @@ const bookmarkList = (function() {
 
   function renderNewBookmark(data) {
     const bookmarkElement = generateBookmarkElement(data);
+    //.prepend adds to top of list
     $('.js-bookmark-list').prepend(bookmarkElement);
   }
 
@@ -88,7 +90,7 @@ const bookmarkList = (function() {
       const bookmarkId = $(event.currentTarget).attr('data-bookmark-id');
       $(`[data-bookmark-id=${bookmarkId}]`).find('.js-bookmark-descr').toggleClass('hidden');
       $(`[data-bookmark-id=${bookmarkId}]`).find('.js-bookmark-link').toggleClass('hidden');
-      console.log('toggle clicked');
+    //   console.log('toggle clicked');
     //   $('.js-bookmark-descr').toggleClass('hidden');
     //   $('.js-bookmark-link').toggleClass('hidden');
     });
@@ -103,7 +105,7 @@ const bookmarkList = (function() {
   }
 
 
-  function handleBookmarkDetailsClicked() {
+  function handleBookmarkDeleteClicked() {
     $('.js-bookmark-list').on('click', '.js-item-delete', event => {
       const bookmarkId = $(event.currentTarget).attr('data-bookmark-id');
       //will delete on server
@@ -111,17 +113,11 @@ const bookmarkList = (function() {
     });
   }
 
-  function handleDeleteBookmarkClicked() {
-    console.log('handleDeleteBookmarkClicked ran');
-
-  }
-
   function bindEventListeners() {
     handleAddButtonClicked();
     handleNewBookmarkSubmit();
     handleRatingDropDownClicked();
-    handleBookmarkDetailsClicked();
-    handleDeleteBookmarkClicked();
+    handleBookmarkDeleteClicked();
     handleToggleDetails();
   }
     
