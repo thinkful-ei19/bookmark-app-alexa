@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    /* not working
+    background-color: bisque; */
   }
   
   body {
@@ -13,6 +15,10 @@
   button:hover {
     cursor: pointer;
   }
+/* not working??
+  a:hover {
+    color: blue;
+  } */
   
   .hidden {
     display: none !important;
