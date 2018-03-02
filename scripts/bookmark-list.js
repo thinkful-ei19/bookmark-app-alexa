@@ -63,6 +63,10 @@ const bookmarkList = (function() {
         rating: $('#new-rating-drop-down').val(),
         url: $('#url-box').val()
       };
+      $('.js-bookmark-list-entry').val('');
+      $('#description-box').val('');
+      $('#new-rating-drop-down').val('');
+      $('#url-box').val('');
       if(newBookmark.title === '') {
         alert('Please enter a title');
         return false;
