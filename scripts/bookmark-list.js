@@ -90,9 +90,7 @@ const bookmarkList = (function() {
     });
   }
 
-  function getBookmarkIndexFromElement() {
-
-  }
+  
 
   function handleRatingDropDownClicked() {
   //event listener - listen for click on rating drop down
